@@ -41,6 +41,9 @@ pip3 install chaperone \
     || die "could not install chaperone"
 rm -fr /root/.cache/pip
 
+# Set the system time to Oslo
+timedatectl set-timezone 'Europe/Oslo'
+
 # Users of this base image should provide their own Chaperone config.
 #cp /tmp/conf/chaperone.conf /etc/chaperone.d/chaperone.conf
 
