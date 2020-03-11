@@ -29,7 +29,7 @@ die() {
 set -x
 
 # Add backports
-echo "deb http://deb.debian.org/debian stretch-backports main" >> /etc/apt/sources.list
+echo "deb http://deb.debian.org/debian buster-backports main" >> /etc/apt/sources.list
 apt-get clean && apt-get update
 
 # Install required packages
